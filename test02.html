@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="paragraph1 bordered">
+    Web 3.0 — концепция, ориентированная на развитие интернет-технологий, сформулированная руководителем Netscape.com <span class = "name bordered" style="background: rgb(93, 236, 105);">Джейсоном Калаканисом</span> в продолжение концепции Web 2.0 <span class = "name bordered" style="background: linear-gradient(45deg, rgb(152, 207, 195) 22%, rgb(110, 82, 182) 84%);">Тима О’Райли</span>. Её суть в том, что Web 2.0 (являющийся в свою очередь переосмыслением Web 1.0) подразумевает обеспечение понимания информации в Web в первую очередь человеком, а Web 3.0 обеспечит взаимодействие и понимание данных в Web <span class="adjective bordered">компьютерными</span> системами.
+</div>
+<div class="paragraph2 bordered">
+    Определение было опубликовано в <span class = "adjective bordered">личном</span> блоге <span class = "name bordered" style="background: rgb(93, 236, 105);">Калаканиса</span> 10 марта 2007 года. <span class = "name bordered" style="background: rgb(93, 236, 105);">Калаканис</span> отметил, что Web 2.0 позволил быстро и практически бесплатно использовать <span class = "adjective bordered">значительное</span> количество <span class = "adjective bordered">мощных</span> интернет-сервисов с высокими <span class = "adjective bordered">потребительскими</span> качествами, что привело к появлению <span class = "adjective bordered">огромного</span> количества <span class = "adjective bordered">однообразных</span> ресурсов, и, как следствие, обесцениванию большинства из них. Идея в том, что на основе Web 2.0 должна возникнуть <span class = "adjective bordered">новая</span> платформа — не столько <span class = "adjective bordered">технологическая</span>, сколько <span class = "adjective bordered">социокультурная</span>, используемая профессионалами для создания <span class = "adjective bordered">интересного</span>, <span class = "adjective bordered">полезного</span> и <span class = "adjective bordered">качественного</span> контента. В качестве примера тенденции к переходу от Web 2.0 к Web 3.0 <span class = "name bordered" style="background: rgb(93, 236, 105);">Калаканис</span> приводит <span class = "adjective bordered">немецкий</span> раздел Википедии, который по мере наполнения контентом прибегает к закрытию на редактирование <span class = "adjective bordered">неопытными</span> участниками <span class = "adjective bordered">качественных</span> статей, вводит рецензирование статей силами <span class = "adjective bordered">профессиональных</span> редакторов.
+</div>
+<div class="paragraph3 bordered">
+    Одной из трактовок термина Web 3.0 является соотнесение его с <span class = "adjective bordered">семантической</span> паутиной. Главная мысль этой концепции базируется на внедрении метаязыка, описывающего содержание сайтов для организации <span class = "adjective bordered">автоматического</span> обмена между серверами.
+</div>
+<style>
+    .adjective {
+        background: yellow;
+        transition: all 0.2s; /* all означает что сглаживаем все преобразования, 0.3s -- это скорость перехода в секундах */
+    }
+    .adjective:hover {
+    cursor: pointer;
+    border-width: 4px; /* меняю ширину границы, да можно только ширину указать */
+    padding: 6px; /* меняю отступы от границы */
+    box-shadow: 0 0 30px white; /* делаю тень белой и побольше, получается иллюзия свечения */
+    }
+    .paragraph1 {
+        background: #366bb9; 
+        text-align: center;  
+    }
+    .paragraph1.bordered{
+        border: 1px solid rgb(255, 39, 219);
+        padding: 8px 16px;
+    }
+    .paragraph1 .adjective{
+        background: white;
+    }
+    .paragraph1 .adjective:hover{
+        background: red; 
+    }
+
+    .paragraph2 { 
+        width: 500px; 
+        background: linear-gradient(90deg, #00aeff, #ffa6f3); 
+        text-align: right;    
+    }
+    .paragraph2.bordered{
+        border: 2px solid rgb(175, 50, 50);
+        padding: 8px 16px;
+    }
+    .paragraph2 .adjective{
+        background: rgb(238, 255, 0);
+    }
+    .paragraph2 .adjective:hover{
+        background: red; 
+    }
+
+    .paragraph3 { 
+        box-sizing: border-box;
+        width: 50%; background: #c049a6;
+        text-align: left;
+    }
+    .paragraph3.bordered{
+        display: block;
+        padding: 8px 16px;
+        border: 10px solid black;
+    }
+    .paragraph3 .adjective{
+        background: rgb(0, 183, 255);
+    }
+    .paragraph3 .adjective:hover{
+        background: red; 
+    }
+
+    .name { 
+        transition: all 0.2s;
+    }
+    .name.bordered{
+        padding: 8px; 
+        border: 1px solid rgb(255, 39, 219);
+    }
+    .name:hover {
+        cursor: pointer;
+        border-width: 3px; /* меняю ширину границы, да можно только ширину указать */
+        padding: 10px; /* меняю отступы от границы */
+    }
+    .bordered{
+    border: 2px dotted black;
+    display: inline-block; 
+    margin: 2px; 
+    padding: 0 4px;
+    border-radius: 8px;
+}
+</style>
+</body>
+</html>
