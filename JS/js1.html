@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container p-2">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button type="button" class="btn btn-primary" onclick="onButtonClick(this)" style="background-color: #0d6efd; color: white;">Я синяя кнопочка</button>
+        </div>   
+        <div class="col-auto">
+          <button type="button" class="btn btn-info" onclick="onButtonClick(this)" style="background-color: #0dcaf0; ">Я бирюзовая кнопочка</button>
+        </div> 
+        <div class="col-auto">
+          <button type="button" class="btn btn-warning" onclick="onButtonClick(this)" style="background-color: #ffc107;">Я жёлтая кнопочка</button>
+        </div>      
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-auto ">
+          <button type="button" class="btn btn-outline-secondary" onclick="onButtonClick(this)" style="background-color: #6c757d; color: white;">Я серая кнопочка</button>
+        </div>   
+        <div class="col-auto">
+          <button type="button" class="btn btn-outline-danger" onclick="onButtonClick(this)" style="background-color: #ff003c; color: white;">Я опасная кнопочка</button>
+        </div>     
+      </div>
+
+      <div class="row justify-content-center mt-2">
+        <div class="col-auto">
+          <div id="square" class="border shadow d-flex align-items-center justify-content-center" style="width: 200px;height:200px;"></div>
+        </div>
+      </div>
+    </div>
+        
+
+    <script>
+      function onButtonClick (target) {
+      let k = document.getElementById("square");
+      square.style.backgroundColor = target.style.backgroundColor;
+      square.innerText = target.innerText
+      square.style.color = target.style.color
+      }
+    </script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  <style>
+    [class^=col] {
+        margin: 5px;
+    }
+    #square {  
+    transition: all .3s;
+  }
+  </style>
+</body>
+
+</html>
