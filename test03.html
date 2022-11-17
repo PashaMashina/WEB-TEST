@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+    <div class="row">
+        <div class="block" style="flex-grow: 1;">
+            Тут живёт собычка
+            <i class="fa-solid fa-dog fa-2x"></i>
+        </div>
+        <div class="block" style="flex-grow: 2; text-align: center;">
+            <i class="fa-solid fa-cat fa-2x"></i>
+            <i class="fa-solid fa-cat fa-2x"></i>
+            <i class="fa-solid fa-cat fa-2x"></i>
+        </div>
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-kiwi-bird fa-2x"></i>
+            Дом киви
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-crow fa-2x"></i>
+            Ворона
+        </div>
+        <div class="block" style="flex-grow: 3; text-align: center;">
+            <i class="fa-solid fa-dog fa-2x"></i>
+            <i class="fa-solid fa-dog fa-2x"></i>
+        </div>
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-dove fa-2x"></i>
+            Голубь
+        </div>
+        <div class="block" style="flex-grow: 1;">
+            <i class="fa-solid fa-horse fa-2x"></i>
+            Лошадка
+        </div>  
+    </div>
+
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-frog fa-2x"></i>
+        </div>
+        <div class="block fish" style="flex-grow: 2; text-align: center;">
+            <i class="fa-solid fa-fish-fins fa-2x"></i>
+        </div>
+        <div class="block fish" style="flex-grow: 2; text-align: center;">
+            <i class="fa-solid fa-fish-fins fa-2x"></i>
+        </div>
+        <div class="block fish" style="flex-grow: 2; text-align: center;">
+            <i class="fa-solid fa-fish-fins fa-2x"></i>
+        </div>
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-frog fa-2x"></i>
+        </div>  
+    </div>
+
+    <div class="row">
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree fa-2x"></i>
+        </div>
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree fa-2x"></i>
+        </div>
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree fa-2x"></i>
+        </div>
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree fa-2x"></i>
+        </div>
+        <div class="block" style="flex-grow: 1; text-align: center;">
+            <i class="fa-solid fa-crow fa-2x"></i>
+        </div>  
+    </div>
+    <style>
+    .block {
+        border: 1px solid black;
+        margin-bottom: 0.5rem; /* отступ снизу */
+        margin: 0.25rem; /* оступы вокруг блоков */
+        padding: 0.5rem; /* отступы внутри блоков */
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    .row {
+        display: flex;
+    }
+    .tree{
+        background: rgb(64, 247, 64);
+    }
+    .fish{
+        background: rgb(40, 169, 255);
+    }
+    </style>
+</body>
+</html>
